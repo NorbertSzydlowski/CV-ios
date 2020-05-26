@@ -1,0 +1,42 @@
+{
+  "base": {
+    "name": "Marek",
+    "surname": "Kowalski",
+    "photo": null,
+    "birth": "1990-03-21",
+  },
+  "contact": {
+    "phone": "+48 500 200 300",
+    "email": "dummy@git.com"
+  },
+  "education": [
+    {
+      "start" : 2000,
+      "finish": 2001,
+      "title": "University of Warmia and Mazury"
+    },
+    {
+      "start" : 2003,
+      "finish": 2004,
+      "title": "University of Elblag"
+    },
+  ],
+  "experience": [
+    {
+      "start" : 2000,
+      "finish": 2002,
+      "title": "iOS Developer"
+    },
+    {
+      "start" : 2003,
+      "finish": null,
+      "title": "Android Developer"
+    },
+  ],
+  "skills": [
+    "Swift",
+    "Objective-C",
+    "Kotlin",
+    "Java"
+  ]
+}
