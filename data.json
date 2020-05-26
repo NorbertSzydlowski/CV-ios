@@ -2,7 +2,7 @@
   "base": {
     "name": "Marek",
     "surname": "Kowalski",
-    "photo": null,
+    "photo": "https://github.com/NorbertSzydlowski/CV-ios/blob/master/avataaars.png",
     "birth": "1990-03-21",
   },
   "contact": {
