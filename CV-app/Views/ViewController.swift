@@ -10,10 +10,13 @@ import UIKit
 class ViewController: UIViewController {
 
     var viewModel: UserViewModel!
+    private var userView: UserView!
     
     override func loadView() {
-        view = UIView()
-        view.backgroundColor = UIColor.white
+        let baseView = BaseViewFactory.shared.create()
+        view = baseView
+        userView = UserView()
+        baseView.append(userView)
     }
 
     override func viewDidLoad() {
@@ -31,8 +34,15 @@ class ViewController: UIViewController {
                 return
             }
             
-            print(user)
+            if let `user` = user {
+                self.prepare(user: user)
+            }
+            
         }
+    }
+    
+    private func prepare(user: User) {
+        userView.prepare(user: user)
     }
 
 }

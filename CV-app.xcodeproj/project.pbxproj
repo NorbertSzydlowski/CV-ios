@@ -24,6 +24,14 @@
 		AEF61423247DA55100902E47 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF61422247DA55100902E47 /* Coordinator.swift */; };
 		AEF61425247DA57700902E47 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF61424247DA57700902E47 /* AppCoordinator.swift */; };
 		AEF6142A247DA92500902E47 /* UIViewController+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF61429247DA92500902E47 /* UIViewController+Helpers.swift */; };
+		AEF6142C247DAF1400902E47 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF6142B247DAF1400902E47 /* UIView+Constraints.swift */; };
+		AEF6142E247DAFBC00902E47 /* NSLayoutConstraint+Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF6142D247DAFBC00902E47 /* NSLayoutConstraint+Priority.swift */; };
+		AEF61430247DB14100902E47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF6142F247DB14100902E47 /* ContentView.swift */; };
+		AEF61432247DB64200902E47 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF61431247DB64200902E47 /* UserView.swift */; };
+		AEF61434247DB88B00902E47 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF61433247DB88B00902E47 /* RoundImageView.swift */; };
+		AEF61437247DB98200902E47 /* User+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF61436247DB98200902E47 /* User+Methods.swift */; };
+		AEF61439247DBA1C00902E47 /* UIImageView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF61438247DBA1C00902E47 /* UIImageView+Helpers.swift */; };
+		AEF6143B247DBB4700902E47 /* SkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF6143A247DBB4700902E47 /* SkillsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +54,14 @@
 		AEF61422247DA55100902E47 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		AEF61424247DA57700902E47 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		AEF61429247DA92500902E47 /* UIViewController+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Helpers.swift"; sourceTree = "<group>"; };
+		AEF6142B247DAF1400902E47 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		AEF6142D247DAFBC00902E47 /* NSLayoutConstraint+Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Priority.swift"; sourceTree = "<group>"; };
+		AEF6142F247DB14100902E47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AEF61431247DB64200902E47 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		AEF61433247DB88B00902E47 /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		AEF61436247DB98200902E47 /* User+Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Methods.swift"; sourceTree = "<group>"; };
+		AEF61438247DBA1C00902E47 /* UIImageView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Helpers.swift"; sourceTree = "<group>"; };
+		AEF6143A247DBB4700902E47 /* SkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +111,7 @@
 		AEF61407247D999700902E47 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AEF61435247DB97100902E47 /* Methods */,
 				AEF61408247D99CD00902E47 /* User.swift */,
 				AEF6140A247D9A0800902E47 /* Info.swift */,
 				AEF6140C247D9A2000902E47 /* Contact.swift */,
@@ -127,6 +144,10 @@
 			isa = PBXGroup;
 			children = (
 				AEF613F7247D993A00902E47 /* ViewController.swift */,
+				AEF6142F247DB14100902E47 /* ContentView.swift */,
+				AEF61431247DB64200902E47 /* UserView.swift */,
+				AEF61433247DB88B00902E47 /* RoundImageView.swift */,
+				AEF6143A247DBB4700902E47 /* SkillsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -144,8 +165,19 @@
 			isa = PBXGroup;
 			children = (
 				AEF61429247DA92500902E47 /* UIViewController+Helpers.swift */,
+				AEF6142B247DAF1400902E47 /* UIView+Constraints.swift */,
+				AEF6142D247DAFBC00902E47 /* NSLayoutConstraint+Priority.swift */,
+				AEF61438247DBA1C00902E47 /* UIImageView+Helpers.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AEF61435247DB97100902E47 /* Methods */ = {
+			isa = PBXGroup;
+			children = (
+				AEF61436247DB98200902E47 /* User+Methods.swift */,
+			);
+			path = Methods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,18 +252,26 @@
 				AEF61414247D9C3F00902E47 /* Response.swift in Sources */,
 				AEF6141F247DA3E500902E47 /* UserViewModel.swift in Sources */,
 				AEF61423247DA55100902E47 /* Coordinator.swift in Sources */,
+				AEF61432247DB64200902E47 /* UserView.swift in Sources */,
 				AEF613F8247D993A00902E47 /* ViewController.swift in Sources */,
+				AEF61434247DB88B00902E47 /* RoundImageView.swift in Sources */,
+				AEF61439247DBA1C00902E47 /* UIImageView+Helpers.swift in Sources */,
 				AEF6140B247D9A0800902E47 /* Info.swift in Sources */,
 				AEF6140F247D9A2A00902E47 /* Education.swift in Sources */,
 				AEF61425247DA57700902E47 /* AppCoordinator.swift in Sources */,
+				AEF6142E247DAFBC00902E47 /* NSLayoutConstraint+Priority.swift in Sources */,
 				AEF61411247D9A4000902E47 /* Experience.swift in Sources */,
 				AEF6141C247DA0D100902E47 /* ApiError.swift in Sources */,
+				AEF6143B247DBB4700902E47 /* SkillsView.swift in Sources */,
 				AEF6140D247D9A2000902E47 /* Contact.swift in Sources */,
 				AEF613F6247D993A00902E47 /* AppDelegate.swift in Sources */,
 				AEF61418247D9E6700902E47 /* Api.swift in Sources */,
 				AEF6141A247D9F4C00902E47 /* Endpoint.swift in Sources */,
+				AEF61430247DB14100902E47 /* ContentView.swift in Sources */,
+				AEF61437247DB98200902E47 /* User+Methods.swift in Sources */,
 				AEF6142A247DA92500902E47 /* UIViewController+Helpers.swift in Sources */,
 				AEF61409247D99CD00902E47 /* User.swift in Sources */,
+				AEF6142C247DAF1400902E47 /* UIView+Constraints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
