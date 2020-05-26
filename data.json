@@ -2,8 +2,8 @@
   "base": {
     "name": "Marek",
     "surname": "Kowalski",
-    "photo": "https://github.com/NorbertSzydlowski/CV-ios/blob/master/avataaars.png",
-    "birth": "1990-03-21",
+    "photo": "https://raw.githubusercontent.com/NorbertSzydlowski/CV-ios/master/avataaars.png",
+    "birth": "1990-03-21"
   },
   "contact": {
     "phone": "+48 500 200 300",
@@ -19,7 +19,7 @@
       "start" : 2003,
       "finish": 2004,
       "title": "University of Elblag"
-    },
+    }
   ],
   "experience": [
     {
@@ -29,9 +29,9 @@
     },
     {
       "start" : 2003,
-      "finish": null,
+      "finish": 2020,
       "title": "Android Developer"
-    },
+    }
   ],
   "skills": [
     "Swift",

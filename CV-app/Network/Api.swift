@@ -8,7 +8,7 @@
 import Foundation
 
 final class API: NSObject {
-    private let baseURL = "https://github.com/"
+    private let baseURL = "https://raw.githubusercontent.com/"
     
     static let shared: API = API()
     
@@ -17,7 +17,7 @@ final class API: NSObject {
         let url = URL(string: baseURL + apiEndpoint.endpoint)!
         
         let task = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
-            
+                        
             if let error = error {
                 completion(.failure(.failed(error.localizedDescription)))
                 return

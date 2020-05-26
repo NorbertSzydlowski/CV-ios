@@ -19,10 +19,14 @@ class UserViewModel {
         api.call(.user, responseType: User.self) { (response) in
             switch (response) {
             case .success(let value):
-                completion(value, nil)
+                DispatchQueue.main.async {
+                    completion(value, nil)
+                }
                 break
             case .failure(let error):
-                completion(nil, error.value)
+                DispatchQueue.main.async {
+                    completion(nil, error.value)
+                }
                 break
             }
         }

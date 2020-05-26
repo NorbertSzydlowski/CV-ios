@@ -9,7 +9,7 @@ import Foundation
 
 enum Endpoint: String {
     
-    private static let location = "/NorbertSzydlowski/CV-ios/blob/master/"
+    private static let location = "/NorbertSzydlowski/CV-ios/master/"
     
     case user
     
