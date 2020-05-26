@@ -3,7 +3,7 @@
     "name": "Marek",
     "surname": "Kowalski",
     "photo": null,
-    "birth": "1990-03-21",
+    "birth": "1990-03-21"
   },
   "contact": {
     "phone": "+48 500 200 300",
@@ -19,7 +19,7 @@
       "start" : 2003,
       "finish": 2004,
       "title": "University of Elblag"
-    },
+    }
   ],
   "experience": [
     {
@@ -31,7 +31,7 @@
       "start" : 2003,
       "finish": null,
       "title": "Android Developer"
-    },
+    }
   ],
   "skills": [
     "Swift",
