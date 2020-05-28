@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE1A4917247FCA820056B9CC /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1A4916247FCA820056B9CC /* DetailsViewController.swift */; };
+		AE1A4919247FCAA20056B9CC /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1A4918247FCAA20056B9CC /* DetailsView.swift */; };
+		AE1A491B247FCB970056B9CC /* DetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1A491A247FCB970056B9CC /* DetailsCoordinator.swift */; };
+		AE1A491D247FCBC80056B9CC /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1A491C247FCBC80056B9CC /* DetailsViewModel.swift */; };
+		AE1A4920247FCFC00056B9CC /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1A491F247FCFC00056B9CC /* BaseController.swift */; };
+		AE1A4923247FD0190056B9CC /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1A4922247FD0190056B9CC /* BaseViewModel.swift */; };
+		AE1A4925247FD7480056B9CC /* ExperiencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1A4924247FD7480056B9CC /* ExperiencesView.swift */; };
+		AE1A4927247FDAF20056B9CC /* ExperienceSingleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1A4926247FDAF20056B9CC /* ExperienceSingleView.swift */; };
 		AEF613F6247D993A00902E47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF613F5247D993A00902E47 /* AppDelegate.swift */; };
 		AEF613F8247D993A00902E47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF613F7247D993A00902E47 /* ViewController.swift */; };
 		AEF613FD247D993B00902E47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF613FC247D993B00902E47 /* Assets.xcassets */; };
@@ -35,6 +43,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE1A4916247FCA820056B9CC /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		AE1A4918247FCAA20056B9CC /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		AE1A491A247FCB970056B9CC /* DetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCoordinator.swift; sourceTree = "<group>"; };
+		AE1A491C247FCBC80056B9CC /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		AE1A491F247FCFC00056B9CC /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		AE1A4922247FD0190056B9CC /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		AE1A4924247FD7480056B9CC /* ExperiencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesView.swift; sourceTree = "<group>"; };
+		AE1A4926247FDAF20056B9CC /* ExperienceSingleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceSingleView.swift; sourceTree = "<group>"; };
 		AEF613F2247D993A00902E47 /* CV-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CV-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF613F5247D993A00902E47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEF613F7247D993A00902E47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +91,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE1A4914247FCA530056B9CC /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				AEF6143A247DBB4700902E47 /* SkillsView.swift */,
+				AEF61431247DB64200902E47 /* UserView.swift */,
+				AEF613F7247D993A00902E47 /* ViewController.swift */,
+				AE1A4924247FD7480056B9CC /* ExperiencesView.swift */,
+				AE1A4926247FDAF20056B9CC /* ExperienceSingleView.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		AE1A4915247FCA680056B9CC /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				AE1A4916247FCA820056B9CC /* DetailsViewController.swift */,
+				AE1A4918247FCAA20056B9CC /* DetailsView.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		AE1A491E247FCF9E0056B9CC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AE1A491F247FCFC00056B9CC /* BaseController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		AE1A4921247FD0000056B9CC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AE1A4922247FD0190056B9CC /* BaseViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		AEF613E9247D993A00902E47 = {
 			isa = PBXGroup;
 			children = (
@@ -135,7 +188,9 @@
 		AEF6141D247DA3D500902E47 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				AE1A4921247FD0000056B9CC /* Base */,
 				AEF6141E247DA3E500902E47 /* UserViewModel.swift */,
+				AE1A491C247FCBC80056B9CC /* DetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -143,11 +198,11 @@
 		AEF61420247DA4A300902E47 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AEF613F7247D993A00902E47 /* ViewController.swift */,
+				AE1A491E247FCF9E0056B9CC /* Base */,
+				AE1A4915247FCA680056B9CC /* Details */,
+				AE1A4914247FCA530056B9CC /* Start */,
 				AEF6142F247DB14100902E47 /* ContentView.swift */,
-				AEF61431247DB64200902E47 /* UserView.swift */,
 				AEF61433247DB88B00902E47 /* RoundImageView.swift */,
-				AEF6143A247DBB4700902E47 /* SkillsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -157,6 +212,7 @@
 			children = (
 				AEF61422247DA55100902E47 /* Coordinator.swift */,
 				AEF61424247DA57700902E47 /* AppCoordinator.swift */,
+				AE1A491A247FCB970056B9CC /* DetailsCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -251,27 +307,35 @@
 			files = (
 				AEF61414247D9C3F00902E47 /* Response.swift in Sources */,
 				AEF6141F247DA3E500902E47 /* UserViewModel.swift in Sources */,
+				AE1A4920247FCFC00056B9CC /* BaseController.swift in Sources */,
 				AEF61423247DA55100902E47 /* Coordinator.swift in Sources */,
+				AE1A491B247FCB970056B9CC /* DetailsCoordinator.swift in Sources */,
 				AEF61432247DB64200902E47 /* UserView.swift in Sources */,
 				AEF613F8247D993A00902E47 /* ViewController.swift in Sources */,
 				AEF61434247DB88B00902E47 /* RoundImageView.swift in Sources */,
 				AEF61439247DBA1C00902E47 /* UIImageView+Helpers.swift in Sources */,
+				AE1A4927247FDAF20056B9CC /* ExperienceSingleView.swift in Sources */,
 				AEF6140B247D9A0800902E47 /* Info.swift in Sources */,
 				AEF6140F247D9A2A00902E47 /* Education.swift in Sources */,
 				AEF61425247DA57700902E47 /* AppCoordinator.swift in Sources */,
 				AEF6142E247DAFBC00902E47 /* NSLayoutConstraint+Priority.swift in Sources */,
+				AE1A4919247FCAA20056B9CC /* DetailsView.swift in Sources */,
+				AE1A4917247FCA820056B9CC /* DetailsViewController.swift in Sources */,
 				AEF61411247D9A4000902E47 /* Experience.swift in Sources */,
 				AEF6141C247DA0D100902E47 /* ApiError.swift in Sources */,
 				AEF6143B247DBB4700902E47 /* SkillsView.swift in Sources */,
+				AE1A4925247FD7480056B9CC /* ExperiencesView.swift in Sources */,
 				AEF6140D247D9A2000902E47 /* Contact.swift in Sources */,
 				AEF613F6247D993A00902E47 /* AppDelegate.swift in Sources */,
 				AEF61418247D9E6700902E47 /* Api.swift in Sources */,
 				AEF6141A247D9F4C00902E47 /* Endpoint.swift in Sources */,
 				AEF61430247DB14100902E47 /* ContentView.swift in Sources */,
+				AE1A4923247FD0190056B9CC /* BaseViewModel.swift in Sources */,
 				AEF61437247DB98200902E47 /* User+Methods.swift in Sources */,
 				AEF6142A247DA92500902E47 /* UIViewController+Helpers.swift in Sources */,
 				AEF61409247D99CD00902E47 /* User.swift in Sources */,
 				AEF6142C247DAF1400902E47 /* UIView+Constraints.swift in Sources */,
+				AE1A491D247FCBC80056B9CC /* DetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

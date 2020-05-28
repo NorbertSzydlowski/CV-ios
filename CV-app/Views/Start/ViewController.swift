@@ -7,16 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    var viewModel: UserViewModel!
-    private var userView: UserView!
+class ViewController: BaseController<UserViewModel, UserView> {
     
-    override func loadView() {
-        let baseView = BaseViewFactory.shared.create()
-        view = baseView
-        userView = UserView()
-        baseView.append(userView)
+    override func viewToLoad() -> UserView {
+        return UserView()
     }
 
     override func viewDidLoad() {
@@ -25,6 +19,10 @@ class ViewController: UIViewController {
     }
     
     private func setup() {
+        contentView.clickButton = { [weak self] in
+            self?.viewModel.next()
+        }
+        
         viewModel.fetchUser { [weak self] (user, errorMessage) in
             
             guard let `self` = self else { return }
@@ -42,7 +40,7 @@ class ViewController: UIViewController {
     }
     
     private func prepare(user: User) {
-        userView.prepare(user: user)
+        contentView.prepare(user: user)
     }
 
 }

@@ -7,9 +7,10 @@
 
 import Foundation
 
-class UserViewModel {
+class UserViewModel: BaseViewModel {
     
     let api: API
+    var nextAction: (() -> ())?
     
     init(api: API) {
         self.api = api
@@ -30,5 +31,9 @@ class UserViewModel {
                 break
             }
         }
+    }
+    
+    public func next() {
+        nextAction?()
     }
 }
